@@ -40,6 +40,7 @@ function App() {
           <Route  path="/register" component={Register}/>
          
           <Route  path="/homepage" component={Homepage}/>
+          <Route path='/coins/:id' component={CoinPage} />
       </CustomApp>
     </BrowserRouter>
   );

@@ -18,11 +18,17 @@ const CoinPage = () => {
 
     const fetchSingleCoin = async () => {
        
+        const { data } = await axios.get(SingleCoin(id));
+
+        setCoin(data);
+      
+       
         
         //fetch the coin data here
     }
 
     useEffect(() => {
+         fetchSingleCoin();
       
 
     }, []);
